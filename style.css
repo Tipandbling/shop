@@ -1,30 +1,30 @@
- body {
+body {
       font-family: 'Segoe UI', sans-serif;
-      background-image: url(embroidery-background-with-copy-space_118124-166758.jpg);
+      background: transparent;
     }
     
    .navbar {
-       width: 100%;             /* full width instead of fixed */
-       max-width: 1450px;       /* still limit on large screens */
-       height: auto;            /* let height adjust automatically */
-       min-height: 80px;        /* keep a nice minimum */
+       width: 100%;             
+       max-width: 1450px;       
+       height: auto;           
+       min-height: 80px;
        background: transparent;
        display: flex;
        align-items: center;
        justify-content: space-between;
-       padding: 10px 20px;      /* smaller padding for better fit */
+       padding: 10px 20px;     
        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
        border: 2px solid #ffffff;
        border-radius: 20px;
-       flex-wrap: wrap;         /* allow wrapping */
+       flex-wrap: wrap;        
             }
 
     
     .logo img {
-      width: 100px;  /* adjust logo size */
+      width: 100px;
       height: auto;
       margin-bottom: 30px;
-      border-radius: 12px; /* optional, for rounded corners */
+      border-radius: 12px;
     }
     .navbar ul {
       list-style: none;
@@ -70,14 +70,14 @@
     }
     .slider-container {
       display: flex;
-      flex-direction: column;   /* allows horizontal scrolling */
+      flex-direction: column;   
       gap: 20px;
       padding: 20px;
-      scroll-behavior: smooth; /* smooth scrolling */
+      scroll-behavior: smooth; 
     }
 
     .slider-container::-webkit-scrollbar {
-      height: 10px; /* scrollbar height */
+      height: 10px; 
     }
 
     .slider-container::-webkit-scrollbar-thumb {
@@ -89,7 +89,7 @@
       background:white ;
     }
      .card {
-      flex: 0 0 auto; /* prevents shrinking */
+      flex: 0 0 auto; 
       background: #fff;
       border: 1px solid #ddd;
       border-radius: 10px;
@@ -110,8 +110,13 @@
       object-fit: cover;
       border-radius: 8px;
     }
-
-    .price {
+    .card img {
+    transition: transform 0.3s ease;
+    }
+    .card img:hover {
+    transform: scale(1.2);
+   }
+   .price {
       font-size: 18px;
       color: #333;
       margin: 10px 0;
@@ -154,8 +159,8 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
     .flex-container img {
-      width: 200px;   /* set size of images */
-      height: auto;   /* keep aspect ratio */
+      width: 200px;   
+      height: auto;   
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     }
@@ -166,34 +171,12 @@
       margin-top: 40px;
       margin-bottom: 20px;
     }
-    .card {
-      flex: 0 0 auto; /* prevents shrinking */
-      flex-direction: column;
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      width: 220px;
-      text-align: center;
-      padding: 15px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
+    
     .navbar-text {
-     color:#6a5acd;               /* text color */
-     font-size:30px;            /* text size */
-     margin: 0;                  /* remove default paragraph margin */
-     font-weight: bold;          /* make it bold (optional) */
+     color:#6a5acd;               
+     font-size:30px;            
+     margin: 0;                  
+     font-weight: bold;          
      }
 
     .price {
@@ -202,19 +185,7 @@
       margin: 10px 0;
     }
 
-    .buy-btn {
-      background: linear-gradient(135deg, #6a5acd, #ffffff);
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    .buy-btn:hover {
-      background: linear-gradient(135deg, #6a5acd, #ffffff);
-    }
+    
     .navbar-text{
       font-size: 40px;
       font-style: italic;
@@ -268,22 +239,63 @@
   border-color: #be6ddc;
   box-shadow: 0 0 8px rgba(190, 109, 220, 0.5);
 }
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid #6a5acd;
+  font-size: 16px;
+}
+.login-box {
+  width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.2);
+  border: 2px solid #6a5acd;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 2px solid #6a5acd;
+}
+
+#loginBtn {
+  background: linear-gradient(135deg, #6a5acd, #ffffff);
+  color: white;
+  padding: 12px;
+  border-radius: 50px;
+  width: 100%;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#loginMessage {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
 .footer {
-      width: 100%;             /* full width instead of fixed */
-       max-width: 1450px;       /* still limit on large screens */
-       height: auto;            /* let height adjust automatically */
-       min-height: 80px;        /* keep a nice minimum */
-       background: transparent;
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       padding: 10px 20px;      /* smaller padding for better fit */
-       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-       border: 2px solid #ffffff;
-       border-radius: 20px;
-       flex-wrap: wrap; 
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f2f2f2;
+    border-radius: 50px;   
+    margin: 20px;  
+    flex-wrap: wrap; 
+    background: transparent;
     }
-    .menu-toggle {
+.menu-toggle {
   display: none;
   font-size: 30px;
   color: white;
@@ -300,14 +312,14 @@
   }
 
   .navbar ul {
-    display: none; /* hidden by default on mobile */
+    display: none; 
     flex-direction: column;
     width: 100%;
     padding: 10px 0;
   }
 
   .navbar ul.show {
-    display: flex; /* show when toggled */
+    display: flex; 
   }
 
   .navbar ul li a {
@@ -317,7 +329,7 @@
     width: 100%;
   }
 }
-/*  Responsive product cards for smaller screens */
+
 @media (max-width: 600px) {
   .card {
     width: 160px;
@@ -341,7 +353,6 @@
     font-size: 1.8rem;
   }
 }
-/* 📱 Responsive */
 @media (max-width: 600px) {
   .contact {
     padding: 30px 15px;
