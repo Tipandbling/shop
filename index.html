@@ -4,36 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="logo icon.jpg">
+    <link rel="stylesheet" href="logo.jpg">
     <title>tipsandbling.com</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <div class="navbar">
   <div class="logo">
     <img src="logo.jpg" alt="Company Logo">
   </div>
-
+  
   <!-- Hamburger icon -->
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-  <ul id="menu">
+   <ul id="menu">
     <li><a href="index.html">Home</a></li>
     <li><a href="nails.html">Nails</a></li>
     <li><a href="embrodary.html">Embroidery</a></li>
-    
-  </ul>
+   </ul>
+
 </div>
 
-  <!-- Hero Section -->
   <section class="hero">
     <h1>Welcome to Tips & Bling</h1>
-    <p>Hi, I’m Sanjana, and I specialize in creating beautiful nails and unique embroidery designs. At Tips and Blink, I combine creativity and detail to bring out your personal style—whether it’s through stunning nail art or custom embroidery pieces.</p>
+    <p>Hi, I’m Tips and Bling, and I specialize in creating beautiful nails and unique embroidery designs. At Tips and Blink, I combine creativity and detail to bring out your personal style—whether it’s through stunning nail art or custom embroidery pieces.</p>
     <a href="https://ig.me/m/tipandbling7" class="button">Shop Now</a>
   </section>
- <script>
-  function toggleMenu() {
-    document.getElementById("menu").classList.toggle("show");
-  }
-</script>
+  <section class="contact">
+  <h2>Contact Me</h2>
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Enter Email">
+    <input type="password" id="loginPassword" placeholder="Enter Password">
+    <button id="loginBtn">Login</button>
+    <p id="loginMessage"></p>
+</div>
+</section>
+  <footer class="footer"><P class="navbar-text">TIPS AND BLING</P></footer>
+
+<script src="java.js"></script>
 </body>
 </html>
+
+
