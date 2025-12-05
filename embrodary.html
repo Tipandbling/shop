@@ -6,91 +6,103 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo icon.jpg">
     <title>tipsandbling.com</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-  <div class="navbar">
+<div class="navbar">
   <div class="logo">
     <img src="logo.jpg" alt="Company Logo">
   </div>
-
-  <!-- Hamburger icon -->
+  <div>
+   <input type="text" id="searchBar" class="search-input" placeholder="Search embrodairy...">
+  </div>
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-  <ul id="menu">
+   <ul id="menu">
     <li><a href="index.html">Home</a></li>
     <li><a href="nails.html">Nails</a></li>
     <li><a href="embrodary.html">Embroidery</a></li>
-    
-    
-  </ul>
+    </ul>
 </div>
-    <section id="products" class="container py-5">
+<section id="products" class="container py-5">
     <div class="row text-center mb-4">
       <h2>Our Collection</h2>
     </div>
-    </div>
-    <div class="slider-container">
-   <div class="card">
-      <img src="embrodary1.jpg" alt="Product 1">
-      <p class="price">179</p>
-      <button class="buy-btn">Buy Now</button>
-    </div>
-    <div class="card">
-      <img src="embrodary2.jpg" alt="Product 2">
-      <p class="price">299</p>
-      <button class="buy-btn">Buy Now</button>
-    </div>
-    <div class="card">
-      <img src="embrodary3.jpg" alt="Product 3">
-      <p class="price">299</p>
-      <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
-    </div>
-    
-    <div class="card">
-      <img src="embrodary4.jpg" alt="Product 4">
-      <p class="price">249</p>
-      <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
-    </div>
-    <div class="card">
-      <img src="embrodary5.jpg" alt="Product 5">
-      <p class="price">199</p>
-      <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
-    </div>
-    <div class="card">
-      <img src="embrodary6.jpg" alt="Product 6">
-      <p class="price">199</p>
-      <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
-    </div>
-    <div class="card">
-      <img src="embrodary7.jpg" alt="Product 7">
-      <p class="price">349</p>
-      <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
-    </div>
-    <div class="card">
-      <img src="embrodary8.jpg" alt="Product 8">
-      <p class="price">199</p>
-      <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
-    </div>
-    <div class="card">
-      <img src="embrodary9.jpg" alt="Product 9">
-      <p class="price">249</p>
-      <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
-    </div>
-    <div class="card">
-      <img src="embrodary10.jpg" alt="Product 10">
-      <p class="price">449</p>
-      <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
-    </div>
-      <div class="card">
-      <img src="embrodary11.jpg" alt="Product 11">
-      <p class="price">899</p>
-      <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
-    </div>
-  </div>
-  </section>
-  <footer class="footer"><P class="navbar-text">TIPS AND BLING</P></footer>
-<script src="java.js"></script>
-</body>
 
+    <div class="slider-container">
+
+      <div class="card" data-name="Hand designs">
+        <img src="embrodary1.jpg" alt="Pink Nails">
+        <p class="price">$ 40</p>
+        <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="card" data-name="Name designs">
+        <img src="embrodary2.jpg" alt="Glitter Nails">
+        <p class="price">$ 50</p>
+        <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="card" data-name="Heart designs">
+        <img src="embrodary3.jpg" alt="White Nails">
+        <p class="price">$ 60</p>
+        <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="card" data-name="Flower designs">
+        <img src="embrodary4.jpg" alt="Brown Nails">
+        <p class="price">$ 70</p>
+        <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="card" data-name="Flower with name">
+        <img src="embrodary5.jpg" alt="Black Nails">
+        <p class="price">$ 30</p>
+        <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="card" data-name="Flower with name">
+        <img src="embrodary6.jpg" alt="Butterfly Nails">
+        <p class="price">$ 35</p>
+        <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="card" data-name="Decoratives">
+        <img src="embrodary7.jpg" alt="Valentine Nails">
+        <p class="price">$ 56</p>
+        <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="card" data-name="designs for t-shirt">
+        <img src="embrodary8.jpg" alt="French Nails">
+        <p class="price">$ 99</p>
+        <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="card" data-name="designs for t-shirt">
+        <img src="embrodary9.jpg" alt="Brown Glitter Nails">
+        <p class="price">$ 89>
+        <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="card" data-name="Calender">
+        <img src="embrodary10.jpg" alt="Long Nails">
+        <p class="price">$ 77</p>
+        <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
+      </div>
+       <div class="card" data-name="designs for t-shirt">
+        <img src="embrodary11.jpg" alt="Long Nails">
+        <p class="price">$ 56</p>
+        <a href="https://ig.me/m/tipandbling7" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+</section>
+
+<footer class="footer"><p class="navbar-text">TIPS AND BLING</p></footer>
+
+<script src="java.js"></script>
+
+</body>
 </html>
+
+
 
